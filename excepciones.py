@@ -6,9 +6,16 @@ def palindrome(string):
     except ValueError as ve:
         print(ve)
         return False
+    finally:
+        print("Hemos terminado. El resultado aparecerá a continuación")
 
 
-try:
-    print(palindrome(""))
-except TypeError:
-    print("Solo se pueden ingresar strings")
+def run():
+    try:
+        print(palindrome(""))
+    except TypeError:
+        print("Solo se pueden ingresar strings")
+
+
+if __name__ == '__main__':
+    run()
